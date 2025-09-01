@@ -1,0 +1,1 @@
+[Diagrama bloco UART/AXI](/docs/UART_AXI%20-%20Diagrama%20de%20bloco.png)
