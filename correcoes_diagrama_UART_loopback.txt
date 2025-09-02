@@ -1,0 +1,12 @@
+Yohanan - Diagrama
+
+Estéticamente agradável, bem organizado em blocos bem definidos, entradas e saídas bem definidas, já usa corretamente a nomenclatura do protocolo AMBA AXI.
+
+Comentários:
+-> usar os labels nas setas em detrimento das caixas ajuda a reduzir o tamanho do diagrama;
+-> não entendi o que significa o bloco de lógica de reset. A impressão que dá é de que a cada ciclo de clock os blocos que recebem o sinal de reset serão resetados pois também não há um sinal de trigger, indicando que o clock funcionaria como tal.
+-> sobre o CI CH347, não ficou claro se faz parte da PCB ou se seria implementado em FPGA.
+-> master e slave estão invertidos.
+-> não trabalhou com a padronização de nomenclaruta, usando m_tdata e s_tvalid ao mesmo tempo que usou i_tdata e o_tdata. Ou usar m pareado com s ou usar i pareado com o.
+-> não entendi a lógica da utilização das linhas tracejadas e continuas, especialmente no n_rst. Pq saem três tipos de linhas da mesma porta?
+-> as funcionalidades de cada bloco precisam ser mais explicitas. Estão faltando parametros de generics referente ao baud rate, espaços para armazenamento dos dados que devem ser enviados e recebidos. No módulo de validação não existe uma porta de saida relacionada ao resultado da comparação/validação e dessa forma não conseguimos deduzir a lógica que foi escolhida para garantir a validade do frame.
